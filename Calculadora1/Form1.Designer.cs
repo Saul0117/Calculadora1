@@ -74,6 +74,7 @@
             this.Pantalla.TabIndex = 1;
             this.Pantalla.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Pantalla.BackColorChanged += new System.EventHandler(this.Pantalla_BackColorChanged);
+            this.Pantalla.TextChanged += new System.EventHandler(this.Pantalla_TextChanged);
             // 
             // button1
             // 
@@ -205,6 +206,7 @@
             this.button12.TabIndex = 13;
             this.button12.Text = "C";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.Button12_Click);
             // 
             // button13
             // 

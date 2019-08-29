@@ -146,7 +146,15 @@ namespace Calculadora1
 
         private void Button13_Click(object sender, EventArgs e)
         {
-            Pantalla.Clear();
+            if(Pantalla.Text.Length==1)
+            {
+                Pantalla.Text = "";
+            }
+            else
+            {
+                Pantalla.Text = Pantalla.Text.Substring(0, Pantalla.Text.Length - 1);
+            }
+            
         }
 
         private void Pantalla_BackColorChanged(object sender, EventArgs e)
@@ -157,6 +165,16 @@ namespace Calculadora1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Pantalla_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+            Pantalla.Clear();
         }
     }
 }
